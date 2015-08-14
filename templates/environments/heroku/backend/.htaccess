@@ -16,6 +16,10 @@
 # Block access to "hidden" directories whose names begin with a period. This
 # includes directories used by version control systems such as Subversion or Git.
 <IfModule mod_rewrite.c>
+  # uncomment the following 2 lines if you want http:// redirected to https://
+  # RewriteCond %{SERVER_PORT} 80
+  # RewriteRule ^(.*)$ https://$1 [R,L]
+
   RewriteCond %{SCRIPT_FILENAME} -d
   RewriteCond %{SCRIPT_FILENAME} -f
   RewriteRule "(^|/)\." - [F]
