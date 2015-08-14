@@ -3,14 +3,14 @@
 
 This extension allows you to generate environment files into your yii2 advanced application for easy deployment on Heroku. The extension may be helpful if you don't have stage or test server and you need to show somebody how your app works. Before using the extension make sure you have a Heroku account and you know how to create an app and work with it.
 
-> Note: This version has ben modified to work correctly with Kartik's app-practical-a template
+> Note: This version has been modified to work correctly with Kartik's app-practical-a template
 
 ## Installation
 
     php composer.phar require --dev --prefer-dist purrweb/yii2-heroku "dev-app-practical-a"
 or add in composer.json (require-dev section)
 
-    "purrweb/yii2-heroku": "dev-app-practical-a"
+    "circulon/yii2-heroku": "dev-app-practical-a"
 
 ## Usage
 
